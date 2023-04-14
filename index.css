@@ -1,0 +1,194 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+@font-face {
+	font-family: 'Comic Sans';
+	src: url(./assets/fonts/Comic\ Sans\ MS.ttf);
+}
+
+@font-face {
+	font-family: 'Times';
+	src: url(./assets/fonts/Times.ttf);
+}
+
+body {
+	background: url(./assets/images/tile.png);
+	min-height: 100vh;
+	font-family: 'Comic Sans', cursive;
+}
+
+.container {
+	margin: 0 auto;
+	text-align: center;
+	max-width: 965px;
+}
+
+h1 {
+	color: #fff;
+	font-family: Times, sans-serif;
+	font-size: 112px;
+	letter-spacing: -2px;
+	margin: 0;
+	padding-top: 12px;
+}
+
+h3 {
+	font-size: 40px;
+	color: #fff54f;
+	margin-bottom: 20px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li {
+	display: inline;
+	margin-top: 25px;
+}
+
+img {
+	outline: 4px solid white;
+	outline-offset: -3px;
+}
+
+.first_row img {
+	width: 402px;
+}
+
+.second_row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.second_row img {
+	width: 260px;
+}
+
+.third_row img {
+	width: 540px;
+	margin-top: 15px;
+}
+
+.fourth_row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.fourth_row img {
+	width: 440px;
+	margin-top: 15px;
+}
+
+.fifth_row img {
+	width: 350px;
+	margin-top: 15px;
+}
+
+p {
+	font-weight: bold;
+	margin: 1em 50px;
+	line-height: 1.2em;
+	text-align: left;
+	color: white;
+}
+
+.middle {
+	text-align: center;
+}
+
+.yellow {
+	color: #fff54f;
+}
+
+.large {
+	font-size: 42px;
+}
+
+.medium {
+	font-size: 25px;
+}
+
+.small {
+	font-size: 21px;
+}
+
+.ribbons {
+	background: url(./assets/images/bow_left.png) no-repeat 155px 70px;
+}
+
+.ribbons p {
+	background: url(./assets/images/bow_right.png) no-repeat 655px 70px;
+	padding: 22px;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 18px;
+	padding: 10px 0;
+}
+
+@media (max-width: 990px) {
+	h1 {
+		font-size: 82px;
+		letter-spacing: -2px;
+
+		padding-top: 10px;
+	}
+	h3 {
+		font-size: 32px;
+		color: #fff54f;
+		margin-bottom: 20px;
+	}
+
+	.second_row,
+	.fourth_row {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 570px) {
+	img {
+		outline: 2px solid white;
+		outline-offset: -1px;
+	}
+
+	h1 {
+		font-size: 62px;
+		letter-spacing: -2px;
+	}
+	h3 {
+		font-size: 24px;
+		color: #fff54f;
+	}
+
+	.third_row img {
+		width: 440px;
+	}
+
+	.fourth_row img {
+		width: 440px;
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 62px;
+		letter-spacing: -2px;
+	}
+	h3 {
+		font-size: 24px;
+		color: #fff54f;
+	}
+
+	.first_row img,
+	.third_row img,
+	.fourth_row img {
+		width: 320px;
+	}
+}
